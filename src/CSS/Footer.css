@@ -1,0 +1,41 @@
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 5vh;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    color: #CCCCCC;
+  }
+
+.companySection
+{
+    display: flex;
+    align-items: center;
+}
+
+.companyText
+{
+    margin-left: 22rem;
+}
+
+.icons{
+    margin-left: 25rem;
+}
+
+.facebookIcon{
+    color: #3B5998;
+}
+
+.youtubeIcon
+{    
+    color: #FF0000;
+
+}
+
+.twitterIcon
+{
+    color: #00ACEE;
+
+}
