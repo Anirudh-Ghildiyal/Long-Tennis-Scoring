@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 import WelcomeText from './WelcomeText';
 import Footer from './Footer';
 
-export default function Background() {
+export default function HomePage() {
   return (
     <div className='background'>
         <NavBar/>
