@@ -62,7 +62,7 @@ export default function SignUpForm() {
                 className="form-control"
                 id="email"
                 aria-describedby="email"
-                placeholder="poyntsport@gmail.com"
+                placeholder="poyntsports@gmail.com"
               />
             </div>
           </div>
@@ -145,14 +145,6 @@ export default function SignUpForm() {
 
         <button type="submit" className="btn submit mb-3">
           Submit
-        </button>
-        <button type="submit" className="btn google mb-3">
-          <img
-            src= {GoogleLogo}
-            alt=""
-            className="GoogleLogo"
-          />{" "}
-          Sign Up with Google
         </button>
 
         <div className="text-white text-center">
