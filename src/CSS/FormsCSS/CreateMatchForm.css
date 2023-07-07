@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+.container{
+    width: 50vw;
+}
+
+.inputContainer{
+    display: flex;
+}
+
+.input{
+    width: 100%;
+}
+
+input{
+    border-radius: 20px;
+
+}
+
+.createMatch
+{
+    background-color: #B8EA3F;
+    border-radius: 20px;
+    color: black;
+    font-weight: 500;
+}
+
+.createMatch:hover{
+    background-color: black;
+    color: white;
+}
+  
+input.form-control{
+    border-radius: 20px;
+}
+
+#basic-addon1{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.form-control:focus{
+    border-color: #B8EA3F; /* Replace "red" with your desired border color */
+    box-shadow: none; /* Optional: Remove the default box shadow */
+    border-width: 2px;
+  }
+
+.matchText{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.detailsText{
+    font-size: 1rem;
+    color: #B8EA3F;
+    font-weight: 200;
+}
+
+.createMatchHeading{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15vh;
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #B8EA3F;
+}
+
+.selectGroup
+{
+    display: flex;
+}
+
+.search{
+    width: 50%;
+}
+
+.searchContainer{
+    display: flex;
+    justify-content: center;
+}
+
+select.form-select {
+    border-radius: 20px;
+  }
+
+.selectP{
+    background-color: black;
+    color: white;
+}
+
+.form-select:focus {
+    border-color: #B8EA3F; /* Replace "red" with your desired border color */
+    border-width: 2px; /* Increase the border width to your desired value */
+    box-shadow: none; /* Optional: Remove the default box shadow */
+  }
+  
+  

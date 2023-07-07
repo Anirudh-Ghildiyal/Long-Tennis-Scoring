@@ -1,12 +1,12 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap";
-import SignUp from "./Components/SignUp";
+import CreateMatch from "./Components/CreateMatch";
 
 function App() {
   return (
     <>
-      <SignUp/>
+      <CreateMatch/>
     </>
   );
 }
