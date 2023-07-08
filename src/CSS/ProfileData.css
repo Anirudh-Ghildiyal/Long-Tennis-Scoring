@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+.profileContainer{
+  width: 45vw;
+  margin: auto;
+}
+
+.profilePhoto {
+  border: 2px solid #b8ea4f;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  height: 125px;
+  width: 125px;
+  background-image: url("../Images/ProfilePic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.coloredText {
+  color: #b8ea4f;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #B8EA3F;
+}
+
+.editProfile {
+  color: black;
+  background-color: #B8EA3F;
+  border-radius: 20px;
+}
+
+.editProfile:hover {
+  color: white;
+  background-color: black;
+}
+
+.playerName{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.level{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.playingYear{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.informationContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftColumn{
+  text-align: left;
+}
+
+.rightColumn{
+  text-align: left;
+}

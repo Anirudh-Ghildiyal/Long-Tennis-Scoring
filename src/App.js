@@ -1,12 +1,12 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap";
-import CreateMatch from "./Components/CreateMatch";
+import ProfilePage from "./Components/ProfilePage";
 
 function App() {
   return (
     <>
-      <CreateMatch/>
+      <ProfilePage/>
     </>
   );
 }
