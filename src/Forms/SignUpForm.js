@@ -4,8 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone, faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import GoogleLogo from "../Images/GoogleLogo.png";
-
 
 export default function SignUpForm() {
   const [selectedDate, setSelectedDate] = useState(null);

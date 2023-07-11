@@ -1,12 +1,12 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap";
-import LifetimeScore from "./Components/LifetimeScore";
+import EditProfile from "./Components/EditProfile";
 
 function App() {
   return (
     <>
-      <LifetimeScore/>
+      <EditProfile/>
     </>
   );
 }
