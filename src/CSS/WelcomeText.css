@@ -1,47 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
-
-.container
-{
+.welcomeContainer {
     font-family: 'Poppins', sans-serif;
     margin-top: 12rem;
 }
 
-.coloredText
-{
-    color:#B8EA3F;
-}
-
-.italic
-{
-    font-style: italic;
-}
-
-.fs
-{
+.fs {
     font-size: 2.5rem;
-    font-weight: bold;
 }
 
-.thin
-{
+.thin {
     font-weight: 100;
 }
 
-.btn
-{
+.registerButton {
+    background-color: #B8EA3F;
     color: black;
     border-radius: 20px;
     width: 100px;
+    font-weight: 500;
 }
 
-.btn:hover{
+.registerButton:hover {
     background-color: black;
+    color: white;
 }
 
-.register{
-    background-color:#B8EA3F;
-}
-
-.login{
+.loginButton {
     background-color: white;
+    color: black;
+    border-radius: 20px;
+    width: 100px;
+    font-weight: 500;
+}
+
+.loginButton:hover {
+    background-color: black;
+    color: white;
 }

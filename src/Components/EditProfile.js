@@ -4,9 +4,14 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import "../CSS/EditProfile.css";
 
-export default function EditProfile() {
+export default function EditProfile(props) {
   return (
-    <div className="profileBackground">
+    <div
+      className="background"
+      style={{
+        backgroundImage: `url(${props.img})`,
+      }}
+    >
       <NavBar />
       <EditProfileForm />
       <Footer />

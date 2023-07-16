@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
@@ -15,7 +16,7 @@ export default function NavBar() {
     <>
       <nav className="navbar navbar-expand-lg bg-body-white">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="https://www.poyntsports.com/">
             <img
               src={Logo}
               alt="Logo"
@@ -26,33 +27,32 @@ export default function NavBar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to="/">
                   <FontAwesomeIcon icon={faHome} className="navbar-icon" />
                   <span className="navbar-text active">Home</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/profile">
                   <FontAwesomeIcon icon={faUser} className="navbar-icon" />
                   <span className="navbar-text">Profile</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/creatematch">
                   <FontAwesomeIcon icon={faGamepad} className="navbar-icon" />
                   <span className="navbar-text">Create Match</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/lifetimescore">
                   <FontAwesomeIcon icon={faTrophy} className="navbar-icon" />
                   <span className="navbar-text">Lifetime Score</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -62,27 +62,27 @@ export default function NavBar() {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="https://www.poyntsports.com/">
                       Create Events
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="https://www.poyntsports.com/">
                       Tournaments
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="https://www.poyntsports.com/">
                       Search Venues
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="https://www.poyntsports.com/">
                       Coaching
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="https://www.poyntsports.com/">
                       Shop
                     </a>
                   </li>

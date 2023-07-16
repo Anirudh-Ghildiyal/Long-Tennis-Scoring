@@ -1,15 +1,19 @@
-import React from 'react';
-import "../CSS/HomePage.css";
-import NavBar from './NavBar';
-import WelcomeText from './WelcomeText';
-import Footer from './Footer';
+import React from "react";
+import NavBar from "./NavBar";
+import WelcomeText from "./WelcomeText";
+import Footer from "./Footer";
 
-export default function HomePage() {
+export default function HomePage(props) {
   return (
-    <div className='background'>
-        <NavBar/>
-        <WelcomeText/>
-        <Footer/>
+    <div
+      style={{
+        backgroundImage: `url(${props.img})`,
+      }}
+      className="background"
+    >
+      <NavBar />
+      <WelcomeText />
+      <Footer />
     </div>
-  )
+  );
 }

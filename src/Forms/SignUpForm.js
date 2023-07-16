@@ -1,26 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "../CSS/FormsCSS/SignUpForm.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone, faUserCircle } from "@fortawesome/free-solid-svg-icons";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+import {
+  faEnvelope,
+  faPhone,
+  faUserCircle,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function SignUpForm() {
-  const [selectedDate, setSelectedDate] = useState(null);
   return (
-    <div className="container">
-
+    <div className="signupContainer m-auto">
       <div className="signUpHeading mt-5">
-      <FontAwesomeIcon icon={faUserCircle} className="userIcon" />
-      <div className="signUpHeadingText ms-3">
-        <div className="createAccount">Create Account</div>
-        <div className="detailsText italic">Enter your details to get started!</div>
-      </div>
+        <FontAwesomeIcon icon={faUserCircle} className="userIcon" />
+        <div className="signUpHeadingText ms-3">
+          <div className="createAccount">Create Account</div>
+          <div className="detailsText fst-italic">
+            Enter your details to get started!
+          </div>
+        </div>
       </div>
 
-      <div className="line mt-3"></div>
+      <div className="signupLine mt-3"></div>
 
-      <form className="mt-2">
+      <form className="mt-4">
         <div className="inputContainer">
           <div className="mb-3 input">
             <label htmlFor="firstName" className="form-label text-white">
@@ -91,12 +94,14 @@ export default function SignUpForm() {
             </label>
             <select class="form-select" aria-label="Default select example">
               <option selected>Select your gender</option>
-              <option id="optionSelect" value="1">Male</option>
+              <option id="optionSelect" value="1">
+                Male
+              </option>
               <option value="2">Female</option>
               <option value="3">Others</option>
             </select>
           </div>
-          <div className="mb-3 ms-3 input">
+          {/* <div className="mb-3 ms-3 input">
             <label htmlFor="dob" className="form-label text-white">
               Date of Birth
             </label>
@@ -113,6 +118,17 @@ export default function SignUpForm() {
                 placeholderText="Select your Date of Birth"
               />
             </div>
+          </div> */}
+          <div className="mb-3 ms-3 input">
+            <label htmlFor="dob" className="form-label text-white">
+              Date of Birth:
+            </label>
+            <input
+              type="date"
+              className="form-control col-4"
+              id="dob"
+              placeholder="Enter your date of birth"
+            />
           </div>
         </div>
 
@@ -141,12 +157,14 @@ export default function SignUpForm() {
           </div>
         </div>
 
-        <button type="submit" className="btn submit mb-3">
+        <button type="submit" className="btn m-auto submit mb-3 mt-2">
           Submit
         </button>
 
-        <div className="text-white text-center">
-          Already a User? <span className="alreadyUser">Log In!</span>
+        <div className="d-flex justify-content-center">
+          <Link to="/login" className="text-white text-decoration-none">
+            Already a User? <span className="blueText">Log In!</span>
+          </Link>
         </div>
       </form>
     </div>

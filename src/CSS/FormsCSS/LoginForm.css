@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
-
-.container{
+.loginContainer{
     width: 30vw;
+    margin: auto;
 }
 
 .inputContainer{
@@ -10,11 +9,6 @@
 
 .input{
     width: 100%;
-}
-
-input{
-    border-radius: 20px;
-
 }
 
 .login
@@ -29,10 +23,6 @@ input{
 .login:hover{
     background-color: black;
     color: white;
-}
-
-.newUser{
-    color: #2F74DB;
 }
   
 input.form-control{
@@ -72,7 +62,7 @@ input.form-control{
     margin-top: 15vh;
 }
 
-.line{
+.loginLine{
     height: 1px;
     width: 100%;
     background-color: #B8EA3F;

@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../CSS/WelcomeText.css";
 
 export default function WelcomeText() {
   return (
-    <div className="container text-white text-center">
-      <div className="coloredText italic fs">POYNT SPORTS: </div>
-      <div className="italic fs">
+    <div className="welcomeContainer text-white text-center">
+      <div className="coloredText fst-italic fs fw-bold">POYNT SPORTS: </div>
+      <div className="fst-italic fs fw-bold">
         Revolutionising <span className="coloredText"> Long Tennis</span>{" "}
         Scoring
       </div>
@@ -13,12 +14,16 @@ export default function WelcomeText() {
         Next-Level Scoring Platform for Professionals and Amateurs Alike
       </div>
       <div className="buttonArea mt-5">
-        <button type="button" className="btn register">
-          Register
-        </button>
-        <button type="button" className="btn login ms-5">
-          Login
-        </button>
+        <Link to="/signup">
+          <button type="button" className="btn registerButton">
+            Register
+          </button>
+        </Link>
+        <Link to="/login">
+          <button type="button" className="btn loginButton ms-5">
+            Login
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -1,19 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../CSS/FormsCSS/LoginForm.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faKey } from "@fortawesome/free-solid-svg-icons";
 
 export default function LoginForm() {
   return (
-    <div className="container">
+    <div className="loginContainer">
       <div className="loginHeading text-center">
         <div className="welcomeText">Welcome Back!</div>
-        <div className="detailsText">
+        <div className="detailsText fst-italic">
           Please enter your details to get started
         </div>
       </div>
 
-      <div className="line mt-3"></div>
+      <div className="loginLine mt-3"></div>
 
       <form className="mt-4">
         <div className="mb-3 input">
@@ -58,7 +59,10 @@ export default function LoginForm() {
             defaultValue=""
             id="flexCheckDefault"
           />
-          <label className="form-check-label text-white" htmlFor="flexCheckDefault">
+          <label
+            className="form-check-label text-white"
+            htmlFor="flexCheckDefault"
+          >
             Remember Me
           </label>
           <div className="forgetPass">Forget Password?</div>
@@ -68,8 +72,10 @@ export default function LoginForm() {
           Login
         </button>
 
-        <div className="text-white text-center">
-          Don't have an account? <span className="newUser">Sign Up!</span>
+        <div className="d-flex justify-content-center">
+          <Link to="/signup" className="text-white text-decoration-none">
+            Don't have an account? <span className="blueText">Sign Up!</span>
+          </Link>
         </div>
       </form>
     </div>
