@@ -7,10 +7,10 @@ import "../CSS/ProfilePage.css";
 export default function ProfilePage(props) {
   return (
     <div
-      className="background"
       style={{
         backgroundImage: `url(${props.img})`,
       }}
+      className="background"
     >
       <NavBar />
       <ProfileData />

@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
-
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
-.profileContainer {
-    width: 45vw;
-    margin: auto;
+.lifetimeContainer {
+    width: 40vw;
+    margin-top: 12vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Poppins", sans-serif;
 }
 
 .profilePhoto {
@@ -23,15 +20,6 @@
     margin-top: 10%;
 }
 
-.coloredText {
-    color: #b8ea4f;
-}
-
-.line {
-    height: 1px;
-    width: 100%;
-    background-color: black;
-}
 
 .playerName {
     font-size: 1.5rem;
@@ -51,14 +39,6 @@
 .informationContainer {
     display: flex;
     justify-content: space-between;
-}
-
-.leftColumn {
-    text-align: left;
-}
-
-.rightColumn {
-    text-align: left;
 }
 
 .subHeading

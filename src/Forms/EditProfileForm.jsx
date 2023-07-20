@@ -1,33 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
   faPhone,
   faUserEdit,
 } from "@fortawesome/free-solid-svg-icons";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
 import "../CSS/FormsCSS/EditProfileForm.css";
+import { Link } from "react-router-dom";
 
 export default function EditProfileForm() {
-  const [selectedDate, setSelectedDate] = useState(null);
-
   return (
-    <div className="profileContainer text-center">
+    <div className="editProfileContainer text-center">
       <div className="profilePhoto">
         <FontAwesomeIcon icon={faUserEdit} className="picUpload" />
       </div>
 
-      <form className="mt-2">
+      <form className="mt-4">
         <input
           type="file"
           className="form-control imageUpload text-center"
           id="inputGroupFile01"
         />
 
-        <div className="informationContainer mt-2">
+        <div className="informationContainer mt-4">
           <div className="leftColumn">
-            <div className="mb-2 input">
+            <div className="mb-3 input">
               <label htmlFor="firstName" className="form-label">
                 First Name:
               </label>
@@ -39,7 +36,7 @@ export default function EditProfileForm() {
               />
             </div>
 
-            <div className="mb-2 input">
+            <div className="mb-3 input">
               <label htmlFor="email" className="form-label">
                 Email Id:
               </label>
@@ -57,7 +54,7 @@ export default function EditProfileForm() {
               </div>
             </div>
 
-            <div className="mb-2 input">
+            <div className="mb-3 input">
               <label htmlFor="gender" className="form-label">
                 Gender:
               </label>
@@ -73,7 +70,7 @@ export default function EditProfileForm() {
               </select>
             </div>
 
-            <div className="mb-2 input">
+            <div className="mb-3 input">
               <label htmlFor="address" className="form-label">
                 Address:
               </label>
@@ -89,7 +86,7 @@ export default function EditProfileForm() {
           </div>
 
           <div className="rightColumn">
-            <div className="mb-2 input">
+            <div className="mb-3 input">
               <label htmlFor="lastName" className="form-label">
                 Last Name:
               </label>
@@ -101,7 +98,7 @@ export default function EditProfileForm() {
               />
             </div>
 
-            <div className="mb-2 input">
+            <div className="mb-3 input">
               <label htmlFor="contact" className="form-label">
                 Contact Number:
               </label>
@@ -119,26 +116,19 @@ export default function EditProfileForm() {
               </div>
             </div>
 
-            <div className="mb-2 input">
+            <div className="mb-3 input">
               <label htmlFor="dob" className="form-label">
                 Date of Birth:
               </label>
-              <div>
-                <DatePicker
-                  isClearable
-                  selected={selectedDate}
-                  onChange={(date) => setSelectedDate(date)}
-                  dateFormat="dd/MM/yyyy"
-                  maxDate={new Date()}
-                  showYearDropdown
-                  showMonthDropdown
-                  dropdownMode="select"
-                  placeholderText="Select your Date of Birth"
-                />
-              </div>
+              <input
+                type="date"
+                className="form-control col-4"
+                id="dob"
+                placeholder="Enter your date of birth"
+              />
             </div>
 
-            <div className="mb-2 input">
+            <div className="mb-3 input">
               <label htmlFor="level" className="form-label">
                 Level:
               </label>
@@ -163,12 +153,17 @@ export default function EditProfileForm() {
         </div>
       </form>
 
-      <button type="button" className="btn save mt-1">
-        Save
-      </button>
-      <button type="button" className="btn btn-danger ms-3 mt-1">
-        Cancel
-      </button>
+      <Link to="/profile">
+        <button type="button" className="btn save mt-3">
+          Save
+        </button>
+      </Link>
+
+      <Link to="/profile">
+        <button type="button" className="btn btn-danger ms-3 mt-3">
+          Cancel
+        </button>
+      </Link>
     </div>
   );
 }

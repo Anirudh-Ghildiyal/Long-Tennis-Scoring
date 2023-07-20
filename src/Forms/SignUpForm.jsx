@@ -10,8 +10,8 @@ import {
 
 export default function SignUpForm() {
   return (
-    <div className="signupContainer m-auto">
-      <div className="signUpHeading mt-5">
+    <div className="signupContainer">
+      <div className="signUpHeading">
         <FontAwesomeIcon icon={faUserCircle} className="userIcon" />
         <div className="signUpHeadingText ms-3">
           <div className="createAccount">Create Account</div>
@@ -156,10 +156,12 @@ export default function SignUpForm() {
             />
           </div>
         </div>
-
-        <button type="submit" className="btn m-auto submit mb-3 mt-2">
-          Submit
-        </button>
+        
+        <Link to="/profile">
+          <button type="submit" className="btn m-auto submit mb-3 mt-2">
+            Submit
+          </button>
+        </Link>
 
         <div className="d-flex justify-content-center">
           <Link to="/login" className="text-white text-decoration-none">

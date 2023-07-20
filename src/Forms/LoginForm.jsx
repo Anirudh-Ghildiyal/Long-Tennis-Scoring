@@ -68,9 +68,11 @@ export default function LoginForm() {
           <div className="forgetPass">Forget Password?</div>
         </div>
 
-        <button type="submit" className="btn login mb-3">
-          Login
-        </button>
+        <Link to="/profile">
+          <button type="submit" className="btn login mb-3">
+            Login
+          </button>
+        </Link>
 
         <div className="d-flex justify-content-center">
           <Link to="/signup" className="text-white text-decoration-none">

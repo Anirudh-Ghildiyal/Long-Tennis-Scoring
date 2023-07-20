@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
@@ -27,28 +27,28 @@ export default function NavBar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <NavLink className="nav-link" aria-current="page" to="/">
                   <FontAwesomeIcon icon={faHome} className="navbar-icon" />
-                  <span className="navbar-text active">Home</span>
-                </Link>
+                  <span className="navtxt">Home</span>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/profile">
-                  <FontAwesomeIcon icon={faUser} className="navbar-icon" />
-                  <span className="navbar-text">Profile</span>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/creatematch">
+                <NavLink className="nav-link" to="/creatematch">
                   <FontAwesomeIcon icon={faGamepad} className="navbar-icon" />
-                  <span className="navbar-text">Create Match</span>
-                </Link>
+                  <span className="navtxt">Create Match</span>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/lifetimescore">
+                <NavLink className="nav-link" to="/profile">
+                  <FontAwesomeIcon icon={faUser} className="navbar-icon" />
+                  <span className="navtxt">Profile</span>
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/lifetimescore">
                   <FontAwesomeIcon icon={faTrophy} className="navbar-icon" />
-                  <span className="navbar-text">Lifetime Score</span>
-                </Link>
+                  <span className="navtxt">Lifetime Score</span>
+                </NavLink>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -58,31 +58,46 @@ export default function NavBar() {
                   aria-expanded="false"
                 >
                   <FontAwesomeIcon icon={faBars} className="navbar-icon" />
-                  <span className="navbar-text">More Options</span>
+                  <span className="navtxt">More Options</span>
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="https://www.poyntsports.com/">
+                    <a
+                      className="dropdown-item"
+                      href="https://www.poyntsports.com/"
+                    >
                       Create Events
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="https://www.poyntsports.com/">
+                    <a
+                      className="dropdown-item"
+                      href="https://www.poyntsports.com/"
+                    >
                       Tournaments
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="https://www.poyntsports.com/">
+                    <a
+                      className="dropdown-item"
+                      href="https://www.poyntsports.com/"
+                    >
                       Search Venues
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="https://www.poyntsports.com/">
+                    <a
+                      className="dropdown-item"
+                      href="https://www.poyntsports.com/"
+                    >
                       Coaching
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="https://www.poyntsports.com/">
+                    <a
+                      className="dropdown-item"
+                      href="https://www.poyntsports.com/"
+                    >
                       Shop
                     </a>
                   </li>

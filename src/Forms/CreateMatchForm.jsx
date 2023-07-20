@@ -5,16 +5,16 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export default function CreateMatchForm() {
   return (
-    <div className="container ">
+    <div className="createMatchContainer ">
       <div className="createMatchHeading text-center">
         <div className="matchText">Create Match</div>
-        <div className="detailsText">Get ready to play Long Tennis!</div>
+        <div className="detailsText fst-italic">Get ready to play Long Tennis!</div>
       </div>
 
-      <div className="line mt-3"></div>
+      <div className="createMatchline mt-4"></div>
 
       <form className="mt-4">
-        <div className="searchContainer">
+        {/* <div className="searchContainer">
           <div className="input search mb-3 ">
             <label htmlFor="search" className="form-label text-white">
               Search Participants or Referee:
@@ -39,7 +39,7 @@ export default function CreateMatchForm() {
               </select>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="selectGroup">
           <div className="mb-3 input">
@@ -124,8 +124,8 @@ export default function CreateMatchForm() {
         </div>
 
         <div className="text-center">
-          <button type="button" className="btn createMatch mb-3">
-            Create Match
+          <button type="button" className="btn addParticipants mb-3">
+            Add Participants
           </button>
         </div>
       </form>
