@@ -1,40 +1,31 @@
-.footer {
-    background-color: black;
-    width: 100%;
-    height: 5vh;
-    position: fixed;
-    bottom: 0px;
-    display: flex;
-    align-items: center;
-    color: #CCCCCC;
-  }
-
-.companySection
-{
-    display: flex;
-    align-items: center;
+footer {
+  background-color: black;
+  width: 100%;
+  height: 5vh;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  color: #cccccc;
 }
 
-.companyText
-{
-    margin: auto;
+.companySection {
+  display: flex;
+  align-items: center;
 }
 
-.icons{
+.companyText {
+  margin: auto;
 }
 
-.facebookIcon{
-    color: #3B5998;
+.facebookIcon {
+  color: #3b5998;
 }
 
-.youtubeIcon
-{    
-    color: #FF0000;
-
+.youtubeIcon {
+  color: #ff0000;
 }
 
-.twitterIcon
-{
-    color: #00ACEE;
-
+.twitterIcon {
+  color: #00acee;
 }
