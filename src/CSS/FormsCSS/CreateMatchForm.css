@@ -1,91 +1,69 @@
-.createMatchContainer{
-    width: 50vw;
-    margin-top: 25vh;
-    margin-left: auto;
-    margin-right: auto;
+.createMatchContainer {
+  width: 50vw;
+  margin-top: 25vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.inputContainer{
-    display: flex;
+.inputContainer {
+  display: flex;
 }
 
-.addParticipants
-{
-    background-color: #B8EA3F;
-    border-radius: 20px;
-    color: black;
-    font-weight: 500;
+.addParticipants {
+  background-color: #b8ea3f;
+  border-radius: 20px;
+  color: black;
+  font-weight: 500;
 }
 
-.addParticipants:hover{
-    background-color: black;
-    color: white;
-}
-  
-input.form-control{
-    border-radius: 20px;
+.addParticipants:hover {
+  background-color: black;
+  color: white;
 }
 
-#basic-addon1{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+input.form-control {
+  border-radius: 20px;
 }
 
-.form-control:focus{
-    border-color: #B8EA3F; /* Replace "red" with your desired border color */
-    box-shadow: none; /* Optional: Remove the default box shadow */
-    border-width: 2px;
-  }
-
-.matchText{
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
+#basic-addon1 {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
-.detailsText{
-    font-size: 1rem;
-    color: #B8EA3F;
-    font-weight: 200;
+.form-control:focus {
+  border-color: #b8ea3f; /* Replace "red" with your desired border color */
+  box-shadow: none; /* Optional: Remove the default box shadow */
+  border-width: 2px;
 }
 
-.createMatchHeading{
-    font-family: 'Poppins', sans-serif;
+.matchText {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
 }
 
-.createMatchline{
-    height: 1px;
-    width: 100%;
-    background-color: #B8EA3F;
+.detailsText {
+  font-size: 1rem;
+  color: #b8ea3f;
+  font-weight: 200;
 }
 
-.selectGroup
-{
-    display: flex;
+.createMatchHeading {
+  font-family: "Poppins", sans-serif;
 }
 
-.search{
-    width: 50%;
+.createMatchline {
+  height: 1px;
+  width: 100%;
+  background-color: #b8ea3f;
 }
 
-.searchContainer{
-    display: flex;
-    justify-content: center;
-}
-
-select.form-select {
-    border-radius: 20px;
-  }
-
-.selectP{
-    background-color: black;
-    color: white;
+.selectGroup {
+  display: flex;
 }
 
 .form-select:focus {
-    border-color: #B8EA3F; /* Replace "red" with your desired border color */
-    border-width: 2px; /* Increase the border width to your desired value */
-    box-shadow: none; /* Optional: Remove the default box shadow */
-  }
-  
-  
+  border-color: #b8ea3f; /* Replace "red" with your desired border color */
+  border-width: 2px; /* Increase the border width to your desired value */
+  box-shadow: none; /* Optional: Remove the default box shadow */
+}

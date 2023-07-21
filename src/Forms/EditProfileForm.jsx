@@ -160,7 +160,7 @@ export default function EditProfileForm() {
       </Link>
 
       <Link to="/profile">
-        <button type="button" className="btn btn-danger ms-3 mt-3">
+        <button type="button" className="btn cancelButton ms-3 mt-3">
           Cancel
         </button>
       </Link>

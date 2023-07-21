@@ -1,0 +1,15 @@
+#search
+{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sendInvite{
+    background-color: #b8ea3f;
+    font-weight: 500;
+    color: black;
+}
+.sendInvite:hover{
+    background-color: black;
+    color: white;
+}

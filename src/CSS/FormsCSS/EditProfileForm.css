@@ -37,13 +37,14 @@
   background-color: black;
 }
 
-.btn-danger {
+.cancelButton {
+  background-color: #D3D3D3;
   color: black;
   border-radius: 20px;
   font-weight: 500;
 }
 
-.btn-danger:hover {
+.cancelButton:hover {
   color: white;
   background-color: black;
 }

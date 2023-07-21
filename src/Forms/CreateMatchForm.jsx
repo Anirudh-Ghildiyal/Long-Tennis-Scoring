@@ -1,46 +1,20 @@
 import React from "react";
 import "../CSS/FormsCSS/CreateMatchForm.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import AddParticipantsModal from "../Components/AddParticipantsModal";
 
 export default function CreateMatchForm() {
   return (
     <div className="createMatchContainer ">
       <div className="createMatchHeading text-center">
         <div className="matchText">Create Match</div>
-        <div className="detailsText fst-italic">Get ready to play Long Tennis!</div>
+        <div className="detailsText fst-italic">
+          Get ready to play Long Tennis!
+        </div>
       </div>
 
       <div className="createMatchline mt-4"></div>
 
       <form className="mt-4">
-        {/* <div className="searchContainer">
-          <div className="input search mb-3 ">
-            <label htmlFor="search" className="form-label text-white">
-              Search Participants or Referee:
-            </label>
-            <div className="input-group">
-              <span className="input-group-text" id="basic-addon1">
-                <FontAwesomeIcon icon={faSearch} className="input-group" />
-              </span>
-              <input
-                id="search"
-                type="text"
-                className="form-control"
-                aria-label="Text input with select input field"
-              />
-              <select
-                className="form-select selectP"
-                aria-label="Select input with dropdown button"
-              >
-                <option selected="">Search For</option>
-                <option value={1}>Referee</option>
-                <option value={2}>Participant</option>
-              </select>
-            </div>
-          </div>
-        </div> */}
-
         <div className="selectGroup">
           <div className="mb-3 input">
             <label htmlFor="match" className="form-label text-white">
@@ -124,9 +98,15 @@ export default function CreateMatchForm() {
         </div>
 
         <div className="text-center">
-          <button type="button" className="btn addParticipants mb-3">
+          <button
+            type="button"
+            class="btn addParticipants"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
             Add Participants
           </button>
+          <AddParticipantsModal />
         </div>
       </form>
     </div>
