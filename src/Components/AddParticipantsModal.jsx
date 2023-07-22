@@ -3,7 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "../CSS/AddParticipantsModal.css";
 
-export default function AddParticipantsModal() {
+export default function AddParticipantsModal(props) {
+  const numberOfSections = props.selectedMatchType === 1 ? 2 : 4;
+
   return (
     <div
       class="modal fade"
@@ -28,7 +30,33 @@ export default function AddParticipantsModal() {
             ></button>
           </div>
           <div class="modal-body">
-            <div className="mb-3 text-start">
+            {Array.from({ length: numberOfSections }, (_, index) => (
+              <div key={index} className="mb-3 text-start">
+                <label htmlFor="particpant1" className="form-label">
+                  Search Participant {index + 1}:
+                </label>
+                <div className="d-flex">
+                  <div className="input-group">
+                    <span className="input-group-text" id="basic-addon1">
+                      <FontAwesomeIcon icon={faSearch} className="" />
+                    </span>
+                    <input
+                      type="search"
+                      className="form-control"
+                      id="participant1"
+                      aria-describedby="participant1"
+                    />
+                  </div>
+                  <button type="button" className="btn btn-success ms-2">
+                    Invite
+                  </button>
+                  <button type="button" className="btn btn-danger ms-2">
+                    Remove
+                  </button>
+                </div>
+              </div>
+            ))}
+            {/* <div className="mb-3 text-start">
               <label htmlFor="particpant1" className="form-label">
                 Search Participant 1:
               </label>
@@ -123,14 +151,14 @@ export default function AddParticipantsModal() {
                   Remove
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
           <div class="modal-footer d-flex justify-content-center">
             <button
               type="button"
               class="btn btn-secondary"
               data-bs-dismiss="modal"
-              style={{borderRadius: "20px"}}
+              style={{ borderRadius: "20px" }}
             >
               Close
             </button>

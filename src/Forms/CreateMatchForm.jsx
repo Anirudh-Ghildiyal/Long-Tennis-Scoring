@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "../CSS/FormsCSS/CreateMatchForm.css";
 import AddParticipantsModal from "../Components/AddParticipantsModal";
 
 export default function CreateMatchForm() {
+  const [selectedMatchType, setSelectedMatchType] = useState(1);
+  const handleMatchTypeChange = (event) => {
+    const matchType = parseInt(event.target.value);
+    setSelectedMatchType(matchType);
+  };
+
   return (
     <div className="createMatchContainer ">
       <div className="createMatchHeading text-center">
@@ -24,6 +30,8 @@ export default function CreateMatchForm() {
               <select
                 className="form-select mb-3"
                 aria-label=".form-select-lg example"
+                value={selectedMatchType}
+                onChange={handleMatchTypeChange}
               >
                 <option selected="">Select Match Type</option>
                 <option value={1}>Singles</option>
@@ -106,7 +114,7 @@ export default function CreateMatchForm() {
           >
             Add Participants
           </button>
-          <AddParticipantsModal />
+          <AddParticipantsModal selectedMatchType={selectedMatchType} />
         </div>
       </form>
     </div>
