@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap";
@@ -9,21 +10,26 @@ import Login from "./Components/Login";
 import CreateMatch from "./Components/CreateMatch";
 import ProfilePage from "./Components/ProfilePage";
 import LifetimeScore from "./Components/LifetimeScore";
-import Bg1 from "./Images/Background1.png";
-import Bg2 from "./Images/DataBackground.png";
+import BackgroundCarousel from "./Components/BackgroundCarousel";
+import NavBar from "./Components/NavBar";
+import Footer from "./Components/Footer";
+import ConditionalBackgroundCarousel from "./Components/ConditionalBackgroundCarousel";
 
 function App() {
   return (
     <Router>
+      <NavBar />
       <Routes>
-        <Route path="/signup" element={<SignUp img={Bg1} />} />
-        <Route path="/login" element={<Login img={Bg1} />} />
-        <Route path="/creatematch" element={<CreateMatch img={Bg1} />} />
-        <Route path="/profile" element={<ProfilePage img={Bg2} />} />
-        <Route path="/editprofile" element={<EditProfile img={Bg2} />} />
-        <Route path="/lifetimescore" element={<LifetimeScore img={Bg2} />} />
-        <Route path="/" element={<HomePage img={Bg1} />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/creatematch" element={<CreateMatch />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/editprofile" element={<EditProfile />} />
+        <Route path="/lifetimescore" element={<LifetimeScore />} />
+        <Route path="/" element={<HomePage />} />
       </Routes>
+      <ConditionalBackgroundCarousel />
+      <Footer />
     </Router>
   );
 }

@@ -1,19 +1,31 @@
 import React from "react";
-import NavBar from "./NavBar";
-import WelcomeText from "./WelcomeText";
-import Footer from "./Footer";
+import { Link } from "react-router-dom";
+import "../CSS/HomePage.css";
 
-export default function HomePage(props) {
+export default function HomePage() {
   return (
-    <div
-      style={{
-        backgroundImage: `url(${props.img})`,
-      }}
-      className="background"
-    >
-      <NavBar />
-      <WelcomeText />
-      <Footer />
+    <div className="welcomeContainer text-white text-center"
+    style={{position: "relative", zIndex: 3}}>
+      <div className="coloredText fst-italic fs fw-bold">POYNT SPORTS: </div>
+      <div className="fst-italic fs fw-bold">
+        Revolutionising <span className="coloredText"> Long Tennis</span>{" "}
+        Scoring
+      </div>
+      <div className="mt-3 thin">
+        Next-Level Scoring Platform for Professionals and Amateurs Alike
+      </div>
+      <div className="buttonArea mt-5">
+        <Link to="/signup">
+          <button type="button" className="btn registerButton">
+            Register
+          </button>
+        </Link>
+        <Link to="/login">
+          <button type="button" className="btn loginButton ms-5">
+            Login
+          </button>
+        </Link>
+      </div>
     </div>
   );
 }

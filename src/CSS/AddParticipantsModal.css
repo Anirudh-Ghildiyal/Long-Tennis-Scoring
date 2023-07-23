@@ -1,15 +1,11 @@
-#search
-{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+.modal-backdrop.show {
+    opacity: 0;
 }
 
-.sendInvite{
-    background-color: #b8ea3f;
-    font-weight: 500;
-    color: black;
+.modal-backdrop {
+    z-index: 0;
 }
-.sendInvite:hover{
-    background-color: black;
-    color: white;
+
+.modal-backdrop.fade {
+    opacity: 0.7!important;
 }
