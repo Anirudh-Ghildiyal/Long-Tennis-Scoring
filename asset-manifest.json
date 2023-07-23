@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Long-Tennis-Scoring/static/css/main.23798124.css",
+    "main.js": "/Long-Tennis-Scoring/static/js/main.f7d580e9.js",
+    "static/js/787.00dda517.chunk.js": "/Long-Tennis-Scoring/static/js/787.00dda517.chunk.js",
+    "static/media/ProfilePic.jpg": "/Long-Tennis-Scoring/static/media/ProfilePic.fc417c795ba428fe1551.jpg",
+    "static/media/Background4.png": "/Long-Tennis-Scoring/static/media/Background4.d824d0b5b3cf72cfd50a.png",
+    "static/media/Background3.png": "/Long-Tennis-Scoring/static/media/Background3.f07cbf1bb19c5403c44d.png",
+    "static/media/Background2.png": "/Long-Tennis-Scoring/static/media/Background2.373c0fa072572d5f9900.png",
+    "static/media/Background1.png": "/Long-Tennis-Scoring/static/media/Background1.a5d86bb7a25cf0c7670d.png",
+    "static/media/Logo.png": "/Long-Tennis-Scoring/static/media/Logo.ec32b3f1e8c3501fa053.png",
+    "static/media/DataBackground.png": "/Long-Tennis-Scoring/static/media/DataBackground.aa7f815bef1de3eecf92.png",
+    "index.html": "/Long-Tennis-Scoring/index.html",
+    "main.23798124.css.map": "/Long-Tennis-Scoring/static/css/main.23798124.css.map",
+    "main.f7d580e9.js.map": "/Long-Tennis-Scoring/static/js/main.f7d580e9.js.map",
+    "787.00dda517.chunk.js.map": "/Long-Tennis-Scoring/static/js/787.00dda517.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23798124.css",
+    "static/js/main.f7d580e9.js"
+  ]
+}
