@@ -10,7 +10,6 @@ import Login from "./Components/Login";
 import CreateMatch from "./Components/CreateMatch";
 import ProfilePage from "./Components/ProfilePage";
 import LifetimeScore from "./Components/LifetimeScore";
-import BackgroundCarousel from "./Components/BackgroundCarousel";
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 import ConditionalBackgroundCarousel from "./Components/ConditionalBackgroundCarousel";
@@ -26,7 +25,7 @@ function App() {
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/editprofile" element={<EditProfile />} />
         <Route path="/lifetimescore" element={<LifetimeScore />} />
-        <Route path="" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
       </Routes>
       <ConditionalBackgroundCarousel />
       <Footer />
