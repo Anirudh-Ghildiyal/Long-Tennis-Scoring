@@ -26,7 +26,7 @@ function App() {
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/editprofile" element={<EditProfile />} />
         <Route path="/lifetimescore" element={<LifetimeScore />} />
-        <Route path="/" element={<HomePage />} />
+        <Route path="" element={<HomePage />} />
       </Routes>
       <ConditionalBackgroundCarousel />
       <Footer />
